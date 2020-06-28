@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'listings.apps.ListingsConfig',
     'pages.apps.PagesConfig',
+    'realtors.apps.RealtorsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -127,3 +128,8 @@ STATIC_URL = '/static/'
 STATIC_FILES_DIRS = [
     os.path.join(BASE_DIR, 'CMDProject/static')
 ]
+
+
+# MEDIIA FOLDER SETTINGS
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
