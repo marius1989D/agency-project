@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'CMDProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cmdproject',
+        'NAME': 'cmddb',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'PASSWORD': 'marius123',
         'HOST': 'localhost'
     }
 }
