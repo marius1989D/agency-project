@@ -1,5 +1,13 @@
 from django.db import models
 
+class PortfolioSection(models.Model):
+    portfolio_section_title = models.CharField(max_length=50)
+    portfolio_section_subtitle = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.portfolio_section_title
+
+
 class Portfolio(models.Model):
     title = models.CharField(max_length=50)
     subtitle = models.CharField(max_length=50)
@@ -13,6 +21,14 @@ class Portfolio(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class ServicesSection(models.Model):
+    services_section_title = models.CharField(max_length=50)
+    services_section_subtitle = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.services_section_title
 
 
 class Services(models.Model):

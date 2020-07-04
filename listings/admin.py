@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Services, ServicesSection, Portfolio, PortfolioSection
+
+admin.site.register(Services)
+admin.site.register(ServicesSection)
+admin.site.register(Portfolio)
+admin.site.register(PortfolioSection)
